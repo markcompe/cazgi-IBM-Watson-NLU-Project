@@ -10,6 +10,10 @@ class App extends React.Component {
           sentimentOutput:[],
           sentiment:true
         }
+
+  componentDidMount(){
+    document.title = "Sentiment Analyzer"
+  }
   
   renderTextArea = ()=>{
     document.getElementById("textinput").value = "";
